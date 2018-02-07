@@ -2,7 +2,7 @@ Spritify.com
 ============
 Issue tracker and tutorial for [Spritify](http://spritify.com).  
 Spritify is a tool for the procedural generation of 2D pixel art.  
-It transforms input images consisting of conditional pixels into many, distinct output images with varying properties, such as gradient, noise and color.  
+It transforms input images consisting of conditional pixels into many distinct output images with varying properties, such as gradient, noise and color.  
 
 Input:  
 
@@ -20,7 +20,7 @@ I'd love to hear your feedback, so don't be shy :)
 
 Guide
 -----
-Written for version 1.7.0 of `Spritify`.
+Written for version 1.7.1 of `Spritify`.
 
 ### Brushes / input pixels
 [Spritify](http://spritify.com) offers several pixels for the creation of input images.  
@@ -28,7 +28,7 @@ There's two categories of brushes or input pixels. `Solid` or `final` pixels, an
 
 ![Brushes](/images/brushes.png?raw=true "Brushes")  
 
-#### Solid pixels
+#### Solid pixels (Empty, Border, Body)
 These pixels don't change during the procedural generation.  
 
 ##### Empty
