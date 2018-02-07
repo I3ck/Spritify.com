@@ -1,7 +1,7 @@
 Spritify.com
 ============
 Issue tracker and tutorial for [Spritify](http://spritify.com).  
-Spritify is a tool for procedurally generating 2D pixel art.  
+Spritify is a tool for the procedural generation of 2D pixel art.  
 It transforms input images consisting of conditional pixels into many, distinct output images with varying properties, such as gradient, noise and color.  
 
 Input:  
@@ -22,7 +22,7 @@ Guide
 -----
 
 ### Brushes / input pixels
-[Spritify](http://spritify.com) offers several pixels for creating the input images for the generation of the final sprite.  
+[Spritify](http://spritify.com) offers several pixels for the creation of input images.  
 There's two categories of brushes or input pixels. `Solid` or `final` pixels, and `changing` or `evolving` pixels.  
 
 ![Brushes](/images/brushes.png?raw=true "Brushes")  
@@ -41,27 +41,29 @@ This pixel will later vary in color, shading and noise level.
 
 ##### Solid pixels example
 ![Solid Input](/images/solidinput.png?raw=true "Solid Input")  
-(black: Border, red: Body )  
+(black: `Border`, red: `Body`)  
 
 ![Solid Output](/images/solidoutput.png?raw=true "Solid Output")  
-(Border pixels are all solid black, while Body pixels vary)  
+(`Border` pixels are all solid black, while `Body` pixels vary)  
 
 #### Changing pixels
 
 ##### By Chance (A | B)
-These are pixels which have the same chance of becoming an A or B pixel.
-Boder|Empty has a 50/50 chance to either become a Border or Empty pixel.   
+These are pixels which have the same chance of becoming an A or B pixel.  
+`Boder|Empty` has a 50/50 chance to either become a `Border` or `Empty` pixel.   
+
 ![Or Input](/images/orinput.png?raw=true "Or Input")  
-(green: Border|Empty, cyan: Body|Empty, blue: Border|Body, magenta: Border|Body|Empty)  
+(green: `Border|Empty`, cyan: `Body|Empty`, blue: `Border|Body`, magenta: `Border|Body|Empty`)  
 
 ![Or Output](/images/oroutput.png?raw=true "Or Output")  
 The first column's pixels either become background or the solid border color.  
-The pixels in the second column either became the varying color or background.  
-...
+Pixels within the second column became either the varying color or background.  
+
 
 ##### Conditional (if neighbour)
-These pixels are only non-empty if they have a neighbouring pixel. Additionally they can have a chance as described above. `Border|Empty if neighbour` will be `Empty` if it has no neighbour, otherwise there's a 50% for it becoming `Border` or a 50% chance for it becoming `Empty`.  
-These pixels can be used to toggle entire groups or have growing structures.  
+These pixels are only non-`Empty` if they have a neighbouring pixel.  
+ `Border|Empty if neighbour` will be `Empty` if it has no neighbour, otherwise there's a 50% each for it becoming `Border` or `Empty`. These pixels can be used to toggle entire groups or have growing structures.  
+
 ![Conditional Input](/images/conditionalinput.png?raw=true "Conditional Input")  
 (first row: many `Border|Empty if neighbour` next to `Body|Empty`, second row: many `Border if neighbour`, third row: solid `Body`)
 
@@ -80,6 +82,7 @@ These pixels leave trails while moving randomly. They either stop if hitting ano
 
 ### Controls  
 ![Controls](/images/controls.png?raw=true "Controls")  
+
 The controls are grouped within a panel.  
 - `<-` `->` Undo/Redo
 - `++` `--` Zoom In/Out
@@ -90,10 +93,11 @@ The controls are grouped within a panel.
 #### Flags  
 
 ##### Mirror right/down
-Mirror the input to make it possible to create symmetrical graphics  
+Mirror the input to make to create symmetrical shapes.  
 
 ##### Border on edges
-On the final image all edge pixels will be turned into border pixels  
+On the final image all edge pixels will be turned into border pixels.  
+
 ![Border on edges off](/images/borderonedgesoff.png?raw=true "Border on edges off")  
 (Border on edges off)  
 
@@ -114,6 +118,7 @@ The shading settings add a brightness gradient with the provided strength and di
 
 #### Noise
 The `Noise` value defines how noisy the `Body` pixels of the output will be.  
+
 ![Noise off](/images/noiseoff.png?raw=true "Noise off")  
 (`Noise` set to 0)  
 
@@ -122,6 +127,7 @@ The `Noise` value defines how noisy the `Body` pixels of the output will be.
 
 #### Scaling factor  
 This factor scales the entire image once the smart pixel logic is done.  
+
 ![Scaling factor of 1](/images/scaling1.png?raw=true "Scaling factor of 1")  
 (`Scaling factor` set to 1)  
 
@@ -129,10 +135,11 @@ This factor scales the entire image once the smart pixel logic is done.
 (`Scaling factor` set to 4)  
 
 #### Colors
-The color of `Empty` or `Border` pixels can be set here.  
+The colors of `Empty` or `Border` pixels can be set here.  
 
 #### Image as color source  
 As default `Body` pixels will be assigned any random color. If a color source is set, its pixels will be used to define the `Body` pixels' color.  
+
 ![Color source off](/images/colorsourceoff.png?raw=true "Color source off")  
 (No color source set, the colors are chosen at random)  
 
