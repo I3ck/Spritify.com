@@ -94,7 +94,13 @@ The controls are grouped within a panel.
 #### Flags  
 
 ##### Mirror right/down
-Mirror the input to make to create symmetrical shapes.  
+Mirror the input to create symmetrical shapes.  
+
+![Mirroring off](/images/mirroroff.png?raw=true "Mirroring off")  
+(Mirroring disabled)  
+
+![Mirroring right](/images/mirrorright.png?raw=true "Mirroring right")  
+(`Mirror right` checked)
 
 ##### Border on edges
 On the final image all edge pixels will be turned into border pixels.  
