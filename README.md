@@ -20,7 +20,7 @@ I'd love to hear your feedback, so don't be shy :)
 
 Guide
 -----
-Written for version 1.7.1 of `Spritify`.
+Written for version 1.8.0 of `Spritify`.
 
 ### Brushes / input pixels
 [Spritify](http://spritify.com) offers several pixels for the creation of input images.  
@@ -79,6 +79,15 @@ These pixels leave trails while moving randomly. They either stop if hitting ano
 
 ![Walker Output](/images/walkeroutput.png?raw=true "Walker Output")  
 (The walker generated a random path)
+
+##### Fillers  
+Filler pixels behave similary to walker pixels. Instead of walking or spreading into one direction, they spread radially. They stop at other pixels or after a random number of iterations.  
+
+![Filler Input](/images/fillerinput.png?raw=true "Filler Input")  
+(A `Border filler` close to `Body` pixels)  
+
+![Filler Output](/images/filleroutput.png?raw=true "Filler Output")  
+(The empty space has been filled randomly with `Border` pixels)
 
 
 ### Controls  
