@@ -20,7 +20,7 @@ I'd love to hear your feedback, so don't be shy :)
 
 Guide
 -----
-Written for version 1.8.1 of `Spritify`.
+Written for version 1.8.2 of `Spritify`.
 
 ### Brushes / input pixels
 [Spritify](http://spritify.com) offers several pixels for the creation of input images.  
@@ -122,9 +122,6 @@ On the final image all edge pixels will be turned into border pixels.
 
 ##### Remove lonely
 Removes as final step all pixels which don't have any neighbours.
-
-##### Auto generate
-Issues a `generate` on any change.
 
 #### Sprite size
 `Sprite x` and `Sprite y` define how many images are within the output sprite.  
