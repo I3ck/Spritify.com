@@ -20,7 +20,7 @@ I'd love to hear your feedback, so don't be shy :)
 
 Guide
 -----
-Written for version 1.8.2 of `Spritify`.
+Written for version 1.9.0 of `Spritify`.
 
 ### Brushes / input pixels
 [Spritify](http://spritify.com) offers several pixels for the creation of input images.  
